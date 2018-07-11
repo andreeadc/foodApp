@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    
+         <!--JQUERY-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <!--SITE RELATED SRC-->
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/ajaxCalls.js"></script>
+        
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Shadows+Into+Light" rel="stylesheet">
+
+        
+        <title>Food app for Fomisti</title>
+    </head>
+    <body>
+        <div id="content">
+            <blockquote>
+                <div class="quote1 pull-left hide-show">
+                    <q>Seize the moment. Remember all those women on the "Titanic" who waved off the dessert cart.</q>
+                    <p class="author">- Erma Bombeck</p>
+                </div>
+                <h2 class="hide-show">ALSO</h2>
+                <div class="quote2 pull-right">
+                    <q>Nouvelle Cuisine, roughly translated, means: I can't believe I paid ninety-six dollars and I'm still hungry.</q>
+                    <p class="author">- Mike Kalin</p>
+                </div>
+                
+            </blockquote>
+                <div id="drop">
+                    <p class="color hide-show">On a scale from "I eat in order to live" to "I live in order to eat" you'll find yourself at:</p>
+                    <select id="dropDown" class="hide-show">
+                        <option selected="selected">I'm curious</option>
+                        <option title="You're an alien, we do not want you around."></a>Not really into eating</option>
+                        <option title="You need to find out what you're doing with yourself">I'm in between</option>
+                        <option title="Congrats, you're one of us">GIVE ME THAT FOOD</option>
+                    </select>
+                </div>
+            
+            <p class="margin hide-show">If your answer of choice was the last option, press that huge button:</p>
+            <p class="hide-show">If not... this is not the app for you.</p>
+            <button id="arrow" class="btn"><i class="fas fa-arrow-down"></i></button>
+        </div>
+         
+        <div id="food">
+            <img src="css/image/hungry1.png"/>
+            <p class="backgr">If you're here, I bet this is you most of the time:</p>
+            <form id="foodForm"> 
+                <p>Name:</p>
+                <input input class="target" type="text" name="name"/>
+                <p class="backgr">Favorite food:</p> </br>
+                <input class="target" type="text" name="food"/></br>
+                <p class="backgr">Favorite dessert:</p> </br>
+                <input class="target" type="text" name="dessert"/></br> 
+                <p class="backgr">Favorite beverages:</p><br/>
+                <p class="backgr">Alcoholic:</p> </br>
+                <input class="target" type="text" name="alcoholic"/></br>
+                <p class="backgr">Nonalcoholic:</p> </br>
+                <input class="target" type="text" name="nonalcoholic"/>
+                <p>Recommendation:</p>
+                <input class="target" type="text" name="suggestion"/>
+            </form>
+            <p id="alert">All fields are required</p>
+            <p id="alert">Please use only digits and letters.</p>
+            <button id="submit" class="btn">Submit</button>
+            <button id="show-list" class="btn">What others said:</button>
+        </div>
+        
+        <div id="pop-up" class="hide">
+            <p id="pop-up1">Thanks for your submission.</p>
+            <p id="pop-up2">Have a great day!</p>
+        </div>
+        
+        <div id="container" >
+            <button id="xBtn"><i class="far fa-times-circle"></i></button>
+            <li class="user">
+                <span> </span>
+            </li>
+        </div>
+        
+        <footer>
+            <p>This one's for the 102 room</p>
+        </footer>
+       
+    </body>
+</html>
